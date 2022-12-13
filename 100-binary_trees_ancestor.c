@@ -2,9 +2,7 @@
 
 /**
  * binary_tree_height - measures the height of a binary tree
- * 
  * @prmTree: tree to measure
- * 
  * Return: tree height
  */
 size_t binary_tree_height(const binary_tree_t *prmTree)
@@ -24,8 +22,7 @@ size_t binary_tree_height(const binary_tree_t *prmTree)
  * binary_trees_ancestor - finds the lowest common ancestor of two nodes
  *
  * @prmFirst: first node
- * @prmSecond: seoncd node
- * 
+ * @prmSecond: seoncd nod
  * Return: lower common ancestor
  */
 binary_tree_t *binary_trees_ancestor(
@@ -37,10 +34,8 @@ binary_tree_t *binary_trees_ancestor(
 
 	if (prmFirst == NULL || prmSecond == NULL)
 		return (NULL);
-	
 	if (prmFirst == prmSecond)
 		return ((binary_tree_t *) prmFirst);
-
 	fHeight = binary_tree_height(prmFirst);
 	sHeight = binary_tree_height(prmSecond);
 
