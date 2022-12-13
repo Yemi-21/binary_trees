@@ -8,10 +8,6 @@
  *
  * Return: If parent is NULL or an error occurs - NULL.
  *         Otherwise - a pointer to the new node.
- *
- * Description: If parent already has a left-child, the new node
- *              takes its place and the old left-child is set as
- *              the left-child of the new node.
  */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
