@@ -1,7 +1,6 @@
 #include "binary_trees.h"
 
 /**
- *
  * binary_tree_height - measures the height of a binary tree
  *
  * @prmTree: tree to measure
@@ -18,8 +17,7 @@ size_t binary_tree_height(const binary_tree_t *prmTree)
 	lHeight = prmTree->left ? 1 + binary_tree_height(prmTree->left) : 0;
 	rHeight = prmTree->right ? 1 + binary_tree_height(prmTree->right) : 0;
 	return (lHeight > rHeight ? lHeight : rHeight);
-}	
-
+}
 /**
  * binary_tree_is_perfect - checks if a binary tree is perfect
  *
