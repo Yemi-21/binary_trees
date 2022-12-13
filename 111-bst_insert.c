@@ -23,7 +23,8 @@ while (tree != NULL)
 if (tree->n == prmValue)
 	return (NULL);
 if (tree->n > prmValue)
-{										if (tree->left == NULL)
+{
+	if (tree->left == NULL)
 	{
 	tree->left = binary_tree_node(tree, prmValue);
 	return (tree->left);
