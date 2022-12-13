@@ -4,7 +4,6 @@
  * binary_tree_is_root - checks if a given node is a root
  *
  * @prmNode: node to check
- * 
  * Return: SUCCESS: 1
  *         FAILED:  0
  */
