@@ -2,7 +2,6 @@
 
 /**
  * binary_tree_delete - deletes an entire binary tree
- * 
  * @prmTree: tree to delete
  */
 void binary_tree_delete(binary_tree_t *prmTree)
