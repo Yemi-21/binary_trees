@@ -4,12 +4,12 @@
  * binary_tree_height - measures the height of a binary tree
  *
  * @prmTree: tree to measure
- * 
  * Return: tree height
  */
 size_t binary_tree_height(const binary_tree_t *prmTree)
 {
 	size_t lHeight, rHeight;
+
 	if (prmTree == NULL)
 		return (0);
 
@@ -49,6 +49,7 @@ void executeSameLevel(
 void binary_tree_levelorder(const binary_tree_t *prmTree, void (*prmFunc)(int))
 {
 	int depth, heightTotal;
+
 	if (prmTree == NULL || prmFunc == NULL)
 		return;
 
