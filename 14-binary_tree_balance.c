@@ -2,9 +2,7 @@
 
 /**
  * binary_tree_height - measures the height of a binary tree
- * 
  * @prmTree: tree to measure
- * 
  * Return: tree height
  */
 size_t binary_tree_height(const binary_tree_t *prmTree)
@@ -23,7 +21,6 @@ size_t binary_tree_height(const binary_tree_t *prmTree)
  * binary_tree_balance - measures the balance factor of a binary tree
  *
  * @prmTree: tree to balance
- * 
  * Return: left height - right balance
  */
 int binary_tree_balance(const binary_tree_t *prmTree)
