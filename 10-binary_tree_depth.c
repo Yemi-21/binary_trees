@@ -2,9 +2,7 @@
 
 /**
  * binary_tree_depth - measures the depth of a node in a binary tree
- * 
  * @prmTree: tree to measure
- * 
  * Return: tree depth
  */
 size_t binary_tree_depth(const binary_tree_t *prmTree)
