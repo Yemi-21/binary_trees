@@ -11,6 +11,7 @@ bst_t *array_to_bst(int *prmArray, size_t prmSize)
 	size_t cLoop;
 
 	bst_t *tree = NULL;
+
 	for (cLoop = 0; cLoop < prmSize; cLoop++)
 		bst_insert(&tree, prmArray[cLoop]);
 	return (tree);
