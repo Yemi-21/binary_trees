@@ -68,7 +68,12 @@ size_t height(const binary_tree_t *tree);
 int balance(const binary_tree_t *tree);
 avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent,avl_t **new, int value);
 avl_t *avl_insert(avl_t **tree, int value);
-avl_t *aux_sort(avl_t *parent, int *array, int begin, int last)
-avl_t *sorted_array_to_avl(int *array, size_t size)
+avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
+avl_t *sorted_array_to_avl(int *array, size_t size);
+size_t binary_tree_height(const binary_tree_t *tree);
+int binary_tree_balance(const binary_tree_t *tree);
+int tree_is_perfect(const binary_tree_t *tree);
+int binary_tree_is_perfect(const binary_tree_t *tree);
+int binary_tree_is_heap(const binary_tree_t *tree);
 
 #endif
