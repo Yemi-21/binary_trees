@@ -10,6 +10,7 @@
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new_node;
+
 	new_node = malloc(sizeof(binary_tree_t));
 
 	if (new_node == NULL)
@@ -31,8 +32,8 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 heap_t *check_new_root(heap_t **root, heap_t *new_root)
 {
 	heap_t *head, *current;
-	current = *root;
 
+	current = *root;
 	while (1)
 	{
 		if (binary_tree_balance(current))
@@ -116,7 +117,7 @@ void if_check(heap_t *new_root, heap_t *tmp, heap_t *current)
 void loop_heap(heap_t **root, heap_t *new_root)
 {
 	heap_t *tmp, *current = NULL;
-	
+
 	while (new_root && (new_root->right || new_root->left))
 	{
 		if (new_root->right && new_root->left)
