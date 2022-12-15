@@ -76,5 +76,10 @@ int tree_is_perfect(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 int binary_tree_is_heap(const binary_tree_t *tree);
 heap_t *array_to_heap(int *array, size_t size);
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+heap_t *check_new_root(heap_t **root, heap_t *new_root);
+void if_check(heap_t *new_root, heap_t *tmp, heap_t *current);
+void loop_heap(heap_t **root, heap_t *new_root);
+int heap_extract(heap_t **root);
 
 #endif
