@@ -75,5 +75,6 @@ int binary_tree_balance(const binary_tree_t *tree);
 int tree_is_perfect(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 int binary_tree_is_heap(const binary_tree_t *tree);
+heap_t *array_to_heap(int *array, size_t size);
 
 #endif
